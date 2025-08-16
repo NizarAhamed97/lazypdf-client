@@ -21,7 +21,7 @@ const RotatePage = () => {
 
         try {
             setLoading(true);
-            const res = await axios.post("http://localhost:5000/api/pdf/rotate", formData, {
+            const res = await axios.post("/api/pdf/rotate", formData, {
                 responseType: "blob",
             });
 

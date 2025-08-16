@@ -20,7 +20,7 @@ const FileUploader = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/pdf/merge', formData, {
+      const response = await axios.post('/api/pdf/merge', formData, {
         responseType: 'blob',
         headers: { 'Content-Type': 'multipart/form-data' },
       });

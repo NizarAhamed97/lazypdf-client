@@ -17,7 +17,7 @@ const WordToPdf = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/pdf/convert/word-to-pdf', formData, {
+      const response = await axios.post('/api/pdf/convert/word-to-pdf', formData, {
         responseType: 'blob',
         headers: { 'Content-Type': 'multipart/form-data' },
       });

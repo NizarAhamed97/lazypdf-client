@@ -34,7 +34,7 @@ const SplitPage = () => {
 
         try {
             setLoading(true);
-            const res = await axios.post("http://localhost:5000/api/pdf/split", formData, {
+            const res = await axios.post("/api/pdf/split", formData, {
                 responseType: "blob"
             });
 
